@@ -22,7 +22,7 @@ let package = Package(
         .target(
             name: "nearclientios",
             dependencies: [
-             .Package(url: "https://github.com/yannickl/AwaitKit.git")
+             .package(url: "https://github.com/yannickl/AwaitKit.git")
             ])
     ]
 )
