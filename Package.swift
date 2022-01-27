@@ -23,6 +23,7 @@ let package = Package(
         .package(url: "https://github.com/mxcl/PromiseKit.git", from: "6.0.0"),
         .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", from: "4.1.0"),
         .package(url: "https://github.com/bitmark-inc/tweetnacl-swiftwrap", from: "1.0.0"),
+        .package(url: "https://github.com/keefertaylor/Base58Swift.git", from: "2.1.7")
     ],
     targets: [
         .target(
@@ -31,7 +32,8 @@ let package = Package(
              "PromiseKit",
              "AwaitKit",
              "KeychainAccess",
-             "TweetNacl"
+             "TweetNacl",
+             "Base58Swift"
             ])
     ]
 )
