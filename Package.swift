@@ -19,15 +19,17 @@ let package = Package(
         .library(name: "nearclientios", targets: ["nearclientios"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/yannickl/AwaitKit.git",from:"5.2.0"),
+        .package(url: "https://github.com/yannickl/AwaitKit.git",from:"5.0"),
         .package(url: "https://github.com/mxcl/PromiseKit.git", from: "6.0.0"),
+        .package(url: "https://github.com/kishikawakatsumi/KeychainAccess.git", from: "4.1.0"),
     ],
     targets: [
         .target(
             name: "nearclientios",
             dependencies: [
-              .product(name: "PromiseKit", package: "PromiseKit"),
-              .product(name: "AwaitKit", package: "AwaitKit"),
+             "PromiseKit",
+             "AwaitKit",
+             "KeychainAccess",
             ])
     ]
 )
