@@ -18,11 +18,12 @@ let package = Package(
     products: [
         .library(name: "nearclientios", targets: ["nearclientios"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/yannickl/AwaitKit.git")
+    ],
     targets: [
         .target(
             name: "nearclientios",
-            dependencies: [
-             .package(url: "https://github.com/yannickl/AwaitKit.git")
-            ])
+            dependencies: [])
     ]
 )
