@@ -19,7 +19,8 @@ let package = Package(
         .library(name: "nearclientios", targets: ["nearclientios"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/yannickl/AwaitKit.git",from:"5.2.0")
+        .package(url: "https://github.com/yannickl/AwaitKit.git",from:"5.2.0"),
+        .package(url: "https://github.com/mxcl/PromiseKit.git", from: "6.0.0"),
     ],
     targets: [
         .target(
