@@ -25,6 +25,9 @@ let package = Package(
     targets: [
         .target(
             name: "nearclientios",
-            dependencies: [])
+            dependencies: [
+              .product(name: "PromiseKit", package: "PromiseKit"),
+              .product(name: "AwaitKit", package: "AwaitKit"),
+            ])
     ]
 )
