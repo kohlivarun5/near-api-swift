@@ -21,6 +21,8 @@ let package = Package(
     targets: [
         .target(
             name: "nearclientios",
-            dependencies: [])
+            dependencies: [
+             .Package(url: "https://github.com/yannickl/AwaitKit.git")
+            ])
     ]
 )
